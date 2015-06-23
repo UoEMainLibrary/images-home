@@ -29,8 +29,6 @@
 
     <!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects -->
     <script src="//www.google-analytics.com/analytics.js" async=""></script>
-    <script src="http://collections.ed.ac.uk/assets/modernizr/modernizr-1.7.min.js"></script>
-    <script src="./assets/bootstrap/dist/js/bootstrap.min.js"></script>
     
     <!-- Google Analytics -->
     <script>
@@ -43,16 +41,6 @@
     </script>
     <!-- End Google Analytics -->
 
-    <script src="http://releases.flowplayer.org/5.4.6/flowplayer.min.js"></script>
-
-    <!-- global options -->
-    <script>
-        flowplayer.conf = {
-            analytics: "UA-xxxxxxx-9"
-        };
-    </script>
-
-    
 </head>
 <body>
 <div id="container">
@@ -73,7 +61,15 @@
         <div class="clearfix"></div>
         <div id="collection-title">
             <a href="http://www.ed.ac.uk" class="uoelogo" title="The University of Edinburgh Home" target="_blank"></a>
-            <a href="http://collections.ed.ac.uk/" class="collectionslogo" title="University of Edinburgh Collections Home"></a>
+            <a href="http://images.is.ed.ac.uk/" class="collectionslogo" title="University of Edinburgh Image Collections Home"></a>
+        </div>
+         <div id="collection-search">
+            <form action="http://images.is.ed.ac.uk/luna/servlet/view/search?QuickSearchA=QuickSearchA&" method="post">
+                <fieldset class="search">
+                    <input type="text" name="q" value="" placeholder="search for an image" id="q" />
+                    <input type="submit" name="submit_search" class="btn" value="Search" Title="Find an image" id="submit_search" />
+                </fieldset>
+            </form>
         </div>
     </header>
 
@@ -87,31 +83,31 @@
             <li class="tile">
                 <a href="http://exhibitions.ed.ac.uk/" target="_blank" class="caption">
                     <img src="./assets/images/maps_tile.jpg" alt="Edinburgh University Exhibitions Home" title="Edinburgh University Exhibitions Home">
-                    <span onmouseover="this.style.background='#005784';this.style.color='#FFF'" onmouseout="this.style.background='#FFFFFF';this.style.color='#005784'">Maps</span>
+                    <span onmouseover="this.style.background='#555';this.style.color='#FFF'" onmouseout="this.style.background='#FFFFFF';this.style.color='#005784'">Maps</span>
                 </a>
             </li>
             <li class="tile">
                 <a href="http://collections.ed.ac.uk/iconics" class="caption">
                     <img src="./assets/images/art_tile.jpg" alt="Edinburgh University Iconics Home" title="Edinburgh University Iconics Home">
-                    <span style="background: rgb(255, 255, 255) none repeat scroll 0% 0%; color: rgb(0, 87, 132);" onmouseover="this.style.background='#005784';this.style.color='#FFF'" onmouseout="this.style.background='#FFFFFF';this.style.color='#005784'">Art Collection</span>
+                    <span onmouseover="this.style.background='#555';this.style.color='#FFF'" onmouseout="this.style.background='#FFFFFF';this.style.color='#005784'">Art Collection</span>
                 </a>
             </li>
             <li class="tile">
                 <a href="http://images.is.ed.ac.uk/" target="_blank" class="caption">
                     <img src="./assets/images/shakespeare_tile.jpg" alt="Edinburgh University Image Collections Home" title="Edinburgh University Image Collections Home">
-                    <span onmouseover="this.style.background='#005784';this.style.color='#FFF'" onmouseout="this.style.background='#FFFFFF';this.style.color='#005784'">Shakespeare</span>
+                    <span onmouseover="this.style.background='#555';this.style.color='#FFF'" onmouseout="this.style.background='#FFFFFF';this.style.color='#005784'">Shakespeare</span>
                 </a>
             </li>
             <li class="tile">
                 <a href="http://collections.ed.ac.uk/blog" class="caption">
                     <img src="./assets/images/oriental_tile.jpg" alt="Edinburgh University Library News" title="Edinburgh University Library News">
-                    <span onmouseover="this.style.background='#005784';this.style.color='#FFF'" onmouseout="this.style.background='#FFFFFF';this.style.color='#005784'">Oriental Manuscripts</span>
+                    <span onmouseover="this.style.background='#555';this.style.color='#FFF'" onmouseout="this.style.background='#FFFFFF';this.style.color='#005784'">Oriental Manuscripts</span>
                 </a>
             </li>
             <li class="tile">
                 <a href="http://collections.ed.ac.uk/participate" class="caption">
                     <img src="./assets/images/walterscott_tile.jpg" alt="Edinburgh University Special Collections &amp; Archives Search" title="Edinburgh University Special Collections &amp; Archives Search">
-                    <span onmouseover="this.style.background='#005784';this.style.color='#FFF'" onmouseout="this.style.background='#FFFFFF';this.style.color='#005784'">Walter Scott</span>
+                    <span onmouseover="this.style.background='#555';this.style.color='#FFF'" onmouseout="this.style.background='#FFFFFF';this.style.color='#005784'">Walter Scott</span>
                 </a>
             </li>
         </ul>
@@ -121,31 +117,31 @@
             <li class="tile">
                 <a href="http://exhibitions.ed.ac.uk/" target="_blank" class="caption">
                     <img src="./assets/images/arsanatomica_tile.jpg" alt="Edinburgh University Exhibitions Home" title="Edinburgh University Exhibitions Home">
-                    <span onmouseover="this.style.background='#005784';this.style.color='#FFF'" onmouseout="this.style.background='#FFFFFF';this.style.color='#005784'">Ars Anatomica</span>
+                    <span onmouseover="this.style.background='#555';this.style.color='#FFF'" onmouseout="this.style.background='#FFFFFF';this.style.color='#005784'">Anatomy</span>
                 </a>
             </li>
             <li class="tile">
                 <a href="http://collections.ed.ac.uk/iconics" class="caption">
                     <img src="./assets/images/westmanutile.jpg" alt="Edinburgh University Iconics Home" title="Edinburgh University Iconics Home">
-                    <span style="background: rgb(255, 255, 255) none repeat scroll 0% 0%; color: rgb(0, 87, 132);" onmouseover="this.style.background='#005784';this.style.color='#FFF'" onmouseout="this.style.background='#FFFFFF';this.style.color='#005784'">Western Medieval Manuscripts</span>
+                    <span onmouseover="this.style.background='#555';this.style.color='#FFF'" onmouseout="this.style.background='#FFFFFF';this.style.color='#005784'">Western Medieval Manuscripts</span>
                 </a>
             </li>
             <li class="tile">
                 <a href="http://images.is.ed.ac.uk/" target="_blank" class="caption">
                     <img src="./assets/images/geology_tile.jpg" alt="Edinburgh University Image Collections Home" title="Edinburgh University Image Collections Home">
-                    <span onmouseover="this.style.background='#005784';this.style.color='#FFF'" onmouseout="this.style.background='#FFFFFF';this.style.color='#005784'">Geology and Geologists</span>
+                    <span onmouseover="this.style.background='#555';this.style.color='#FFF'" onmouseout="this.style.background='#FFFFFF';this.style.color='#005784'">Geology and Geologists</span>
                 </a>
             </li>
             <li class="tile">
                 <a href="http://collections.ed.ac.uk/blog" class="caption">
                     <img src="./assets/images/salvesen_tile.jpg" alt="Edinburgh University Library News" title="Edinburgh University Library News">
-                    <span onmouseover="this.style.background='#005784';this.style.color='#FFF'" onmouseout="this.style.background='#FFFFFF';this.style.color='#005784'">Salvesen</span>
+                    <span onmouseover="this.style.background='#555';this.style.color='#FFF'" onmouseout="this.style.background='#FFFFFF';this.style.color='#005784'">Salvesen</span>
                 </a>
             </li>
             <li class="tile">
                 <a href="http://collections.ed.ac.uk/participate" class="caption">
                     <img src="./assets/images/incutile.jpg" alt="Edinburgh University Special Collections &amp; Archives Search" title="Edinburgh University Special Collections &amp; Archives Search">
-                    <span onmouseover="this.style.background='#005784';this.style.color='#FFF'" onmouseout="this.style.background='#FFFFFF';this.style.color='#005784'">Incunabula</span>
+                    <span onmouseover="this.style.background='#555';this.style.color='#FFF'" onmouseout="this.style.background='#FFFFFF';this.style.color='#005784'">Incunabula</span>
                 </a>
             </li>
         </ul>
@@ -155,31 +151,31 @@
             <li class="tile">
                 <a href="http://exhibitions.ed.ac.uk/" target="_blank" class="caption">
                     <img src="./assets/images/architecture_tile.jpg" alt="Edinburgh University Exhibitions Home" title="Edinburgh University Exhibitions Home">
-                    <span onmouseover="this.style.background='#005784';this.style.color='#FFF'" onmouseout="this.style.background='#FFFFFF';this.style.color='#005784'">Architecture</span>
+                    <span onmouseover="this.style.background='#555';this.style.color='#FFF'" onmouseout="this.style.background='#FFFFFF';this.style.color='#005784'">Architecture</span>
                 </a>
             </li>
             <li class="tile">
                 <a href="http://collections.ed.ac.uk/iconics" class="caption">
                     <img src="./assets/images/misc_tile.jpg" alt="Edinburgh University Map Collection Home" title="Edinburgh University Map Collection Home">
-                    <span style="background: rgb(255, 255, 255) none repeat scroll 0% 0%; color: rgb(0, 87, 132);" onmouseover="this.style.background='#005784';this.style.color='#FFF'" onmouseout="this.style.background='#FFFFFF';this.style.color='#005784'">Gallimaufry</span>
+                    <span onmouseover="this.style.background='#555';this.style.color='#FFF'" onmouseout="this.style.background='#FFFFFF';this.style.color='#005784'">Gallimaufry</span>
                 </a>
             </li>
             <li class="tile">
                 <a href="http://images.is.ed.ac.uk/" target="_blank" class="caption">
                     <img src="./assets/images/ecararebooks_tile.jpg" alt="Edinburgh University Image Collections Home" title="Edinburgh University Image Collections Home">
-                    <span onmouseover="this.style.background='#005784';this.style.color='#FFF'" onmouseout="this.style.background='#FFFFFF';this.style.color='#005784'">ECA Rare Books</span>
+                    <span onmouseover="this.style.background='#555';this.style.color='#FFF'" onmouseout="this.style.background='#FFFFFF';this.style.color='#005784'">ECA Rare Books</span>
                 </a>
             </li>
             <li class="tile">
                 <a href="http://collections.ed.ac.uk/blog" class="caption">
                     <img src="./assets/images/hillandadamson_tile.jpg" alt="Edinburgh University Library News" title="Edinburgh University Library News">
-                    <span onmouseover="this.style.background='#005784';this.style.color='#FFF'" onmouseout="this.style.background='#FFFFFF';this.style.color='#005784'">Hill and Adamson</span>
+                    <span onmouseover="this.style.background='#555';this.style.color='#FFF'" onmouseout="this.style.background='#FFFFFF';this.style.color='#005784'">Hill and Adamson</span>
                 </a>
             </li>
             <li class="tile">
                 <a href="http://collections.ed.ac.uk/participate" class="caption">
                     <img src="./assets/images/laing_tile.jpg" alt="Edinburgh University Special Collections &amp; Archives Search" title="Edinburgh University Special Collections &amp; Archives Search">
-                    <span onmouseover="this.style.background='#005784';this.style.color='#FFF'" onmouseout="this.style.background='#FFFFFF';this.style.color='#005784'">Laing</span>
+                    <span onmouseover="this.style.background='#555';this.style.color='#FFF'" onmouseout="this.style.background='#FFFFFF';this.style.color='#005784'">Laing</span>
                 </a>
             </li>
         </ul>
@@ -189,31 +185,31 @@
             <li class="tile">
                 <a href="http://exhibitions.ed.ac.uk/" target="_blank" class="caption">
                     <img src="./assets/images/newcollege_tile.jpg" alt="Edinburgh University Exhibitions Home" title="Edinburgh University Exhibitions Home">
-                    <span onmouseover="this.style.background='#005784';this.style.color='#FFF'" onmouseout="this.style.background='#FFFFFF';this.style.color='#005784'">New College</span>
+                    <span onmouseover="this.style.background='#555';this.style.color='#FFF'" onmouseout="this.style.background='#FFFFFF';this.style.color='#005784'">New College</span>
                 </a>
             </li>
             <li class="tile">
                 <a href="http://collections.ed.ac.uk/iconics" class="caption">
                     <img src="./assets/images/mimed_tile.jpg" alt="Edinburgh University Iconics Home" title="Edinburgh University Iconics Home">
-                    <span style="background: rgb(255, 255, 255) none repeat scroll 0% 0%; color: rgb(0, 87, 132);" onmouseover="this.style.background='#005784';this.style.color='#FFF'" onmouseout="this.style.background='#FFFFFF';this.style.color='#005784'">MIMEd</span>
+                    <span onmouseover="this.style.background='#555';this.style.color='#FFF'" onmouseout="this.style.background='#FFFFFF';this.style.color='#005784'">MIMEd</span>
                 </a>
             </li>            
             <li class="tile">
                 <a href="http://collections.ed.ac.uk/blog" class="caption">
                     <img src="./assets/images/roslin_tile.jpg" alt="Edinburgh University Library News" title="Edinburgh University Library News">
-                    <span onmouseover="this.style.background='#005784';this.style.color='#FFF'" onmouseout="this.style.background='#FFFFFF';this.style.color='#005784'">Roslin</span>
+                    <span onmouseover="this.style.background='#555';this.style.color='#FFF'" onmouseout="this.style.background='#FFFFFF';this.style.color='#005784'">Roslin</span>
                 </a>
             </li>
             <li class="tile">
                 <a href="http://collections.ed.ac.uk/participate" class="caption">
                     <img src="./assets/images/thomson_walker_tile.jpg" alt="Edinburgh University Special Collections &amp; Archives Search" title="Edinburgh University Special Collections &amp; Archives Search">
-                    <span onmouseover="this.style.background='#005784';this.style.color='#FFF'" onmouseout="this.style.background='#FFFFFF';this.style.color='#005784'">Thomson-Walker</span>
+                    <span onmouseover="this.style.background='#555';this.style.color='#FFF'" onmouseout="this.style.background='#FFFFFF';this.style.color='#005784'">Thomson-Walker</span>
                 </a>
             </li>
             <li class="tile">
                 <a href="http://images.is.ed.ac.uk/" target="_blank" class="caption">
                     <img src="./assets/images/museums_tile.jpg" alt="Edinburgh University Image Collections Home" title="Edinburgh University Image Collections Home">
-                    <span onmouseover="this.style.background='#005784';this.style.color='#FFF'" onmouseout="this.style.background='#FFFFFF';this.style.color='#005784'">Museums</span>
+                    <span onmouseover="this.style.background='#555';this.style.color='#FFF'" onmouseout="this.style.background='#FFFFFF';this.style.color='#005784'">Museums</span>
                 </a>
             </li>
         </ul>
@@ -223,45 +219,44 @@
             <li class="tile">
                 <a href="http://exhibitions.ed.ac.uk/" target="_blank" class="caption">
                     <img src="./assets/images/people_places_tile.jpg" alt="Edinburgh University Exhibitions Home" title="Edinburgh University Exhibitions Home">
-                    <span onmouseover="this.style.background='#005784';this.style.color='#FFF'" onmouseout="this.style.background='#FFFFFF';this.style.color='#005784'">People, Places, Events</span>
+                    <span onmouseover="this.style.background='#555';this.style.color='#FFF'" onmouseout="this.style.background='#FFFFFF';this.style.color='#005784'">People, Places, Events</span>
                 </a>
             </li>
             <li class="tile">
-                <a href="http://collections.ed.ac.uk/iconics" class="caption">
-                    <img src="./assets/images/archivestile.jpg" alt="Edinburgh University Iconics Home" title="Edinburgh University Iconics Home">
-                    <span style="background: rgb(255, 255, 255) none repeat scroll 0% 0%; color: rgb(0, 87, 132);" onmouseover="this.style.background='#005784';this.style.color='#FFF'" onmouseout="this.style.background='#FFFFFF';this.style.color='#005784'">Teaching</span>
+                <a href="http://collections.ed.ac.uk/iconics"  target="_blank" class="caption">
+                    <img src="./assets/images/archivestile.jpg" alt="Edinburgh University Iconics Home" title="Edinburgh University Image Teaching Collections Home">
+                    <span onmouseover="this.style.background='#555';this.style.color='#FFF'" onmouseout="this.style.background='#FFFFFF';this.style.color='#005784'">Teaching</span>
                 </a>
             </li>            
             <li class="tile">
-                <a href="http://collections.ed.ac.uk/blog" class="caption">
-                    <img src="./assets/images/news_tile.jpg" alt="Edinburgh University Library News" title="Edinburgh University Library News">
-                    <span onmouseover="this.style.background='#005784';this.style.color='#FFF'" onmouseout="this.style.background='#FFFFFF';this.style.color='#005784'">News</span>
+                <a href="http://libraryblogs.is.ed.ac.uk"  target="_blank" class="caption">
+                    <img src="./assets/images/news_tile.jpg" alt="Edinburgh University Library News" title="Edinburgh University Library Blog">
+                    <span onmouseover="this.style.background='#555';this.style.color='#FFF'" onmouseout="this.style.background='#FFFFFF';this.style.color='#005784'">Library Blog</span>
                 </a>
             </li>
             <li class="tile">
-                <a href="http://collections.ed.ac.uk/participate" class="caption">
-                    <img src="./assets/images/participate_tile.jpg" alt="Edinburgh University Special Collections &amp; Archives Search" title="Edinburgh University Special Collections &amp; Archives Search">
-                    <span onmouseover="this.style.background='#005784';this.style.color='#FFF'" onmouseout="this.style.background='#FFFFFF';this.style.color='#005784'">Participate</span>
+                <a href="http://www.ed.ac.uk/schools-departments/information-services/library-museum-gallery/crc/volunteers-interns"  target="_blank" class="caption">
+                    <img src="./assets/images/participate_tile.jpg" alt="Edinburgh University Special Collections Participate" title="Edinburgh University Special Collections Participate">
+                    <span onmouseover="this.style.background='#555';this.style.color='#FFF'" onmouseout="this.style.background='#FFFFFF';this.style.color='#005784'">Participate</span>
                 </a>
             </li>
             <li class="tile">
-                <a href="http://images.is.ed.ac.uk/" target="_blank" class="caption">
-                    <img src="./assets/images/exhibitionstile.jpg" alt="Edinburgh University Image Collections Home" title="Edinburgh University Image Collections Home">
-                    <span onmouseover="this.style.background='#005784';this.style.color='#FFF'" onmouseout="this.style.background='#FFFFFF';this.style.color='#005784'">Other Collections</span>
+                <a href="http://collections.ed.ac.uk/" target="_blank" class="caption">
+                    <img src="./assets/images/exhibitionstile.jpg" alt="Edinburgh University Collections Home" title="Edinburgh University Image Collections Home">
+                    <span onmouseover="this.style.background='#555';this.style.color='#FFF'" onmouseout="this.style.background='#FFFFFF';this.style.color='#005784'">Other Collections</span>
                 </a>
             </li>
         </ul>
     </div>
-    
-
-</div>        <footer>
+</div>        
+		<footer>
             <div class="footer-links">
-                <a href="http://images.is.ed.ac.uk/luna/servlet/allCollections" title="University of Edinburgh Image Collections" class="collections">Home</a>
-                <a href="http://collections.ed.ac.uk/calendars" title="University of Edinburgh Calendars" class="calendars last">Calendars</a>
+                <a href="http://collections.ed.ac.uk" title="University of Edinburgh Image Collections" class="collections">Collections Online</a>
+                <a href="http://collections.ed.ac.uk/calendars" title="University of Edinburgh Calendars" class="calendars ">Calendars</a>
                 <a href="http://collections.ed.ac.uk/art" title="University of Edinburgh Art Collection" class="art">Art</a>
                 <a href="http://collections.ed.ac.uk/mimed" title="University of Edinburgh Musical Instrument Museums" class="mimed">Mimed</a>
                 <a href="http://exhibitions.ed.ac.uk/" title="University of Edinburgh Exhibitions" class="exhibitions" target="_blank">Exhibitions</a>
-                <a href="http://collections.ed.ac.uk/" title="University of Edinburgh  Collections" class="collections" target="_blank">Collections</a>
+                <a href="http://collections.ed.ac.uk/iconics" title="University of Edinburgh Iconic Collections" class="collections last" target="_blank">Iconics</a>
             </div>
             <div class="footer-disclaimer">
                 <div class="footer-logo">
@@ -283,25 +278,5 @@
     </div>
         </div> <!-- close main -->
         </div> <!-- close container -->
-
-        <!-- moved to headers
-        <script src="<//?php echo base_url()?>assets/jquery-1.11.0/jquery-1.11.0.min.js"></script>
-        <script src="<//?php echo base_url()?>assets/jquery-ui-1.10.4/ui/minified/jquery-ui.min.js"></script>
-        -->
-
-        <!-- Add mousewheel plugin (this is optional) -->
-        <script type="text/javascript" src="http://collections.ed.ac.uk/assets/fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
-        <!-- Add fancyBox -->
-        <script type="text/javascript" src="http://collections.ed.ac.uk/assets/fancybox/source/jquery.fancybox.pack.js?v=2.1.4"></script>
-        <!-- Optionally add helpers - button, thumbnail and/or media -->
-
-        <script type="text/javascript" src="http://collections.ed.ac.uk/assets/fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
-        <script type="text/javascript" src="http://collections.ed.ac.uk/assets/fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.5"></script>
-
-        <script type="text/javascript" src="http://collections.ed.ac.uk/assets/fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
-
-        <script src="http://collections.ed.ac.uk/assets/plugins/plugins.js"></script>
-        <script src="http://collections.ed.ac.uk/assets/script/script.js"></script>
-
     
 </body></html>

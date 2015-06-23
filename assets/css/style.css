@@ -122,6 +122,23 @@ p 								{ font-size: 13px; padding-bottom: 10px; }
 a, a:active, a:visited          { color: #333333; text-decoration: underline;}
 a:hover 						{ text-decoration: underline; color: #005784; }
 
+input[type=text], input[type=password]				{
+    border: 1px solid #bbbbbc; font-size: 13px; height: 28px; padding: 0 10px;
+    -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;
+}
+input.btn						{
+    background: #FC2D48; border: none; height: 28px; color: #fff; text-transform: uppercase; font-size: 14px; margin-left: 8px; font-weight: bold; padding: 0 5px;
+    -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; text-shadow: rgba(0,0,0,0.3) 0px -1px 0px;
+}
+input.btn:hover					{ color: #fff; background: #00315F; }
+
+input.backbtn	                {
+    background: #A87227; border: none; height: 24px; color: #fff; text-transform: uppercase; font-size: 12px; margin-left: 8px; font-weight: bold; padding: 0 10px;
+    margin-top: 10px; margin-bottom: 10px;
+    -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; text-shadow: rgba(0,0,0,0.3) 0px -1px 0px;
+}
+input.backbtn:hover			    { color: #fff; background: #00315F; }
+
 /* Site Css ///////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
 /* Structure -------------------------------------------------------------------------------------------------------------*/
@@ -145,8 +162,11 @@ header				{ position: relative; width: 940px; height: 140px; background-color: #
 #menu                               { width: 940px; background-color: #333333; margin: 0 auto; height: 33px; }
 .menu-links li					    { display: inline; float: right; height: 33px; padding-left: 0; padding-right: 0; }
 .menu-links li a 			        { font-weight: bold; font-size: 11px; text-transform: uppercase; float: left; text-decoration: none; margin-left: 10px; color: #FFFFFF; display: inline-block; height: 33px; line-height: 2.5em; padding: 3px 20px 2px; text-align: center; }
-.menu-links li a:hover		        { background-color: #005784; }
+.menu-links li a:hover		        { background-color: #FC2D48; }
 .menu-links li a.last		        { border: none; }
+
+
+
 
 .social-links li                          { display: block; float: left; height: 33px; padding-left: 0; padding-right: 0; }
 .social-links li a                        { display: block; margin: 0; width: 33px; height: 33px; line-height: 33px; padding: 0;}
@@ -164,6 +184,20 @@ header				{ position: relative; width: 940px; height: 140px; background-color: #
 .uoelogo                        { display: block; width: 119px; height: 88px; float: left; background: url(../images/UoELogo.gif) no-repeat 0px 0px;}
 .collectionslogo                { display: block; width: 421px; height: 88px; float: left; background: url(../images/imagesheader.gif) no-repeat 0px 0px;}
 .collectionslogo:hover          { display: block; background: url(../images/imagesheader.gif) no-repeat 0px -88px; }
+
+#collection-search  			{ width: 400px; padding-top: 20px;}
+
+.search							{ padding-bottom: 22px; width: 400px; }
+.search input[type=text]		{
+    box-shadow: 0px 0px 9px rgba(30,30,60, 0.3); -moz-box-shadow: 0px 0px 9px rgba(30,30,60, 0.75); -webkit-box-shadow: 0px 0px 9px rgba(30,30,60, 0.3);
+    font-size: 16px; color: #555; font-weight: bold; padding-left: 33px; width: 300px;
+    background: #fff url(../images/bg-search.png) no-repeat 0px 0px;
+}
+
+.ie7 .search input[type=text]	{ width: 325px; }
+.search input.btn				{ margin-right: 4px; }
+.search .advanced 				{ text-transform: uppercase; font-size: 10px; text-decoration: none; }
+.search .advanced:hover			{ text-decoration: underline; }
 
 .item-div                       { width: 660px; text-align: left; display: block; }
 .iteminfo                       { display: block; min-height:100px; text-align: left; width: 75%; float:left; }
@@ -188,7 +222,7 @@ footer                  { display: block; padding-bottom: 20px; width: 100%; bac
 .footer-links			{ display: block; margin-bottom: 15px; padding-top: 10px; padding-bottom: 10px; text-align: center; border-top: 1px solid #333; border-bottom: 1px solid #333; width: 100%;}
 .footer-links a 		{ font-size: 10px; text-transform: uppercase; text-decoration: none; color: #AAA79E !important; font-weight: bold; border-right: 1px solid #cecece; padding-right: 15px; margin-right: 10px; }
 .footer-links a.last	{ border: none; }
-.footer-links a:hover	{ text-decoration: underline; }
+.footer-links a:hover	{ text-decoration: underline;}
 
 .footer-links a.collections, .collections:hover     { color: #FE2842 !important; }
 .footer-links a.art, .art:hover                     { color: #58A09D !important; }
@@ -239,26 +273,6 @@ li.tile                             { display: inline; float: left; height: 188p
     font-size: 12px;
     text-align: center;
 }
-
-.tile a.caption:hover span {
-    display: block;
-}
-
-.record_bitstreams                  { margin-top: 20px; }
-
-table								{ width: 100%; margin-bottom: 20px;}
-table caption						{ text-align: left; background: #333333; color: #fff; font-size: 12px; text-transform: uppercase; font-weight: bold; padding: 0px 17px; border-bottom: 1px solid #fff; line-height: 26px; }
-
-table td,
-table th							{ padding: 8px 17px; text-align: left; color: #005784; }
-table th                            { border-right: 1px dashed #D6D3C4; width: 20%; }
-table td                            { width: auto; color: #333333;}
-table tr                            { border-bottom: 1px dashed #D6D3C4; }
-table tr:last-child                 { border: 0; border-bottom: none; }
-
-.feedback_form                      { padding: 0 20px;}
-.feedback_form label                { display: block; width: 100px;}
-#recaptcha_table                    { width: 480px; }
 
 
 /* <END> Site Css \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
