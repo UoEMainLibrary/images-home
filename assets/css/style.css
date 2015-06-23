@@ -112,7 +112,7 @@ h1                              { font-size: 20px; line-height: 24px; margin: 18
 h2                              { font-size: 16px; line-height: 36px; margin: 0 0 0 0; }
 h3                              { color: #333333; font-size: 14px; line-height: 18px; margin: 0 0 9px 0; }
 
-h1.itemtitle 					{ font-size: 20px; line-height: 24px; margin: 20px 0 10px 0px; position: relative; color: #333333; }
+h1.itemtitle 					{ font-size: 20px; line-height: 24px; margin: 10px 0 10px 0px; position: relative; color: #333333; }
 h3.collection-link              { font-size: 16px;  margin-bottom: 15px; }
 h3.collection-link a            { color: #005784; text-decoration: none; }
 h3.collection-link a:hover      { color: #FE2842; text-decoration: underline; }
@@ -185,12 +185,12 @@ header				{ position: relative; width: 940px; height: 140px; background-color: #
 .collectionslogo                { display: block; width: 421px; height: 88px; float: left; background: url(../images/imagesheader.gif) no-repeat 0px 0px;}
 .collectionslogo:hover          { display: block; background: url(../images/imagesheader.gif) no-repeat 0px -88px; }
 
-#collection-search  			{ width: 400px; padding-top: 20px;}
+#collection-search  			{ padding-top: 20px;}
 
-.search							{ padding-bottom: 22px; width: 400px; }
+.search							{ padding-bottom: 22px; width: 360px; }
 .search input[type=text]		{
     box-shadow: 0px 0px 9px rgba(30,30,60, 0.3); -moz-box-shadow: 0px 0px 9px rgba(30,30,60, 0.75); -webkit-box-shadow: 0px 0px 9px rgba(30,30,60, 0.3);
-    font-size: 16px; color: #555; font-weight: bold; padding-left: 33px; width: 300px;
+    font-size: 16px; color: #555; font-weight: bold; padding-left: 33px; width: 270px;
     background: #fff url(../images/bg-search.png) no-repeat 0px 0px;
 }
 
@@ -205,7 +205,7 @@ header				{ position: relative; width: 940px; height: 140px; background-color: #
 .thumbnail-image                { display: block; text-align: center; width: 23%; float: right; }
 
 .thumbnail-strip                { max-width: 660px; display: block; }
-.thumbnail-tile                 { margin-top: 20px; margin-right: 20px; float: left; }
+.thumbnail-tile                 { margin-top: 20px; margin-right: 10px; float: left; }
 .record-thumbnail               { max-width: 150px; max-height: 200px; border: solid 1px #093563; }
 
 .record-bitstreams              { display: block; width: 660px; margin: 5px 0; }
@@ -253,7 +253,7 @@ footer                  { display: block; padding-bottom: 20px; width: 100%; bac
 .content ul.tiles                   { margin: 0; padding: 0; list-style: none outside none; height: 188px; width: 940px; }
 .tiles-wrapper                      { }
 
-li.tile                             { display: inline; float: left; height: 188px; }
+li.tile                             { display: inline; float: left; height: 188px; width: 188px}
 
 .tile a.caption {
     position: relative
