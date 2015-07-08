@@ -265,12 +265,12 @@ li.tile                             { display: inline; float: left; height: 188p
     top: -46px;
     left: 10px;
     width: 168px;
-    padding: 10px;
+    padding: 5px;
     background: #fff;
     color: #005784;
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 12px;
+    font-size: 11px;
     text-align: center;
 }
 
