@@ -253,7 +253,12 @@ footer                  { display: block; padding-bottom: 20px; width: 100%; bac
 .content ul.tiles                   { margin: 0; padding: 0; list-style: none outside none; height: 188px; width: 940px; }
 .tiles-wrapper                      { }
 
+
 li.tile                             { display: inline; float: left; height: 188px; width: 188px}
+img.resize {
+    width:188px; /* you can use % */
+    height: auto;
+}
 
 .tile a.caption {
     position: relative
@@ -262,7 +267,7 @@ li.tile                             { display: inline; float: left; height: 188p
 .tile a.caption span {
     display: block;
     position: absolute;
-    top: -46px;
+    top: 120px;
     left: 10px;
     width: 168px;
     padding: 5px;
@@ -275,9 +280,136 @@ li.tile                             { display: inline; float: left; height: 188p
 }
 
 
-/* <END> Site Css \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+#lhs-tile
+{
+    background: url(https://images.is.ed.ac.uk/luna/servlet/iiif/UoE~2~2~1512~180685/1168,725,3772,3772/500,/0/default.jpg);
+    background-size:contain;
+}
+
+#inc-tile
+{
+    background: url(https://images.is.ed.ac.uk/luna/servlet/iiif/UoEgal~2~2~42099~103004/2750,414,3784,3784/500,/0/default.jpg);
+    background-size:contain;
+}
 
 
+#ana-tile
+{
+    background: url(https://images.is.ed.ac.uk/luna/servlet/iiif/UoEcha~4~4~344543~104717/226,715,3247,3247/500,/0/default.jpg);
+    background-size:contain;
+}
+
+#arc-tile
+{
+    background: url(https://images.is.ed.ac.uk/luna/servlet/iiif/UoEcar~3~3~56898~102144/3091,150,4140,4140/500,/0/default.jpg);
+    background-size:contain;
+}
+#car-tile
+{
+    background: url(https://images.is.ed.ac.uk/luna/servlet/iiif/UoEcar~1~1~33573~100875/433,787,4174,4174/500,/0/default.jpg);
+    background-size:contain;
+}
+
+#crc-tile
+{
+    background: url(https://images.is.ed.ac.uk/luna/servlet/iiif/UoEgal~5~5~129459~108597/0,466,5041,5041/500,/0/default.jpg);
+    background-size:contain;
+}
+#ecr-tile
+{
+    background: url(https://images.is.ed.ac.uk/luna/servlet/iiif/UoEwmm~3~3~60643~103988/757,469,4557,4557/500,/0/default.jpg);
+    background-size:contain;
+}
+#ecp-tile
+{
+    background: url(https://images.is.ed.ac.uk/luna/servlet/iiif/UoEecp~1~1~52980~140316/222,149,1174,1174/500,/0/default.jpg);
+    background-size:contain;
+}
+#geo-tile
+{
+    background: url(https://images.is.ed.ac.uk/luna/servlet/iiif/UoEsha~5~5~84476~103449/1098,544,3703,3703/500,/0/default.jpg);
+    background-size:contain;
+}
+#hil-tile
+{
+    background: url(https://images.is.ed.ac.uk/luna/servlet/iiif/UoEcar~4~4~51245~102747/590,254,4562,4562/500,/0/default.jpg);
+    background-size:contain;
+}
+#lai-tile
+{
+    background: url(https://images.is.ed.ac.uk/luna/servlet/iiif/UoEwmm~2~2~45076~102051/2194,569,4135,4135/500,/0/default.jpg);
+    background-size:contain;
+}
+#map-tile
+{
+    background: url(https://images.is.ed.ac.uk/luna/servlet/iiif/UoEcha~1~1~313931~102922/427,300,4148,4148/500,/0/default.jpg);
+    background-size:contain;
+}
+#mus-tile
+{
+    background: url(https://images.is.ed.ac.uk/luna/servlet/iiif/UoEhal~2~2~100199~100066/441,297,6408,6408/500,/0/default.jpg);
+    background-size:contain;
+}
+#new-tile
+{
+    background: url(https://images.is.ed.ac.uk/luna/servlet/iiif/UoEsha~3~3~55298~102178/471,630,3806,3806/500,/0/default.jpg);
+    background-size:contain;
+}
+#ori-tile
+{
+    background: url(https://images.is.ed.ac.uk/luna/servlet/iiif/UoEsha~4~4~62177~102426/379,404,3454,3454/500,/0/default.jpg);
+    background-size:contain;
+}
+#peo-tile
+{
+    background: url(https://images.is.ed.ac.uk/luna/servlet/iiif/UoEgal~4~4~44042~103300/619,809,5338,5338/500,/0/default.jpg);
+    background-size:contain;
+}
+#ros-tile
+{
+    background: url(https://images.is.ed.ac.uk/luna/servlet/iiif/UoEgal~6~6~161750~111129/390,409,4305,4305/500,/0/default.jpg);
+    background-size:contain;
+}
+#ses-tile
+{
+    background: url(https://images.is.ed.ac.uk/luna/servlet/iiif/UoE~1~1~62789~260765/365,1490,3598,3598/500,/0/default.jpg);
+    background-size:contain;
+}
+#sal-tile
+{
+    background: url(https://images.is.ed.ac.uk/luna/servlet/iiif/UoEcar~2~2~46175~101925/1681,283,3205,3205/500,/0/default.jpg);
+    background-size:contain;
+}
+#sha-tile
+{
+    background: url(https://images.is.ed.ac.uk/luna/servlet/iiif/UoEsha~1~1~51092~101932/779,2090,3177,3177/500,/0/default.jpg);
+    background-size:contain;
+}
+#tea-tile
+{
+    background: url(https://images.is.ed.ac.uk/luna/servlet/iiif/UoEgal~4~4~88238~106789/694,601,2471,2471/500,/0/default.jpg);
+    background-size:contain;
+}
+#oth-tile
+{
+    background: url(https://images.is.ed.ac.uk/luna/servlet/iiif/UoEgal~4~4~85978~106627/1327,256,1935,1935/500,/0/default.jpg);
+    background-size:contain;
+}
+#tho-tile
+{
+    background: url(https://images.is.ed.ac.uk/luna/servlet/iiif/UoEsha~2~2~53223~102106/1555,853,4754,4754/500,/0/default.jpg);
+    background-size:contain;
+}
+#wal-tile
+ {
+     background: url(https://images.is.ed.ac.uk/luna/servlet/iiif/UoEwal~1~1~67945~100954/125,887,1956,1956/500,/0/default.jpg);
+     background-size:contain;
+ }
+#wmm-tile
+{
+    background: url(https://images.is.ed.ac.uk/luna/servlet/iiif/UoEwmm~1~1~60358~103963/1271,1924,2548,2548/500,/0/default.jpg);
+    background-size:contain;
+}/* <END> Site Css \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
 
 /* Non-semantic Helper Classes --------------------------------------------------------------------------------------------------------*/
 
