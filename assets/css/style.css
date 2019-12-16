@@ -107,7 +107,8 @@ body 							{ background: #555; }
 body, select, input, textarea 	{ color: #555; line-height: 18px; font-family: Arial, Helvetica, sans-serif; }
 
 h3 								{ color: #333333; font-size: 14px; line-height: 18px; margin: 0 0 9px 0; }
-h1, h2, h3, h4, h5, h6          { text-rendering: optimizeLegibility; color: #000000; font-weight: bold; }
+h1, h2, h3                      { text-rendering: optimizeLegibility; color: #000000; font-weight: bold; }
+h4, h5, h6                      { text-rendering: optimizeLegibility; color: #000000; }
 h1                              { font-size: 20px; line-height: 24px; margin: 18px 0 17px 0px; position: relative; color: #005784;}
 h2                              { font-size: 16px; line-height: 36px; margin: 0 0 0 0; }
 h3                              { color: #333333; font-size: 14px; line-height: 18px; margin: 0 0 9px 0; }
@@ -503,4 +504,16 @@ img.resize {
 #video-mimed,
 #video-museums {
     float: right;
+}
+
+#acc-content {
+    margin-left: 5px;
+    background-color: #fff;
+    color: #000;
+}
+
+p{
+    margin-left: 10px;
+    background-color: #fff;
+    color: #000;
 }
